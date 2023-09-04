@@ -7,6 +7,7 @@ public class ProgramList
     static void Main(string[] args)
     {
         ExemploLista1();
+        ExemploListaObjeto();
 
     }
 
@@ -58,5 +59,10 @@ public class ProgramList
         listapaci.Add(p3);
         listapaci.Add(p4);
         listapaci.Add(p5);
+
+        foreach (var p in listapaci)
+        {
+            Console.WriteLine(p.nome+ "\n" + p.cpf + "\n\n");
+        }
     }
 }
