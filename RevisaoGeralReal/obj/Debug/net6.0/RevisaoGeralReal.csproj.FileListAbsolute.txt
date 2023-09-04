@@ -1,0 +1,15 @@
+C:\Users\2022102020041\source\repos\RevisaoGeralReal\RevisaoGeralReal\bin\Debug\net6.0\RevisaoGeralReal.exe
+C:\Users\2022102020041\source\repos\RevisaoGeralReal\RevisaoGeralReal\bin\Debug\net6.0\RevisaoGeralReal.deps.json
+C:\Users\2022102020041\source\repos\RevisaoGeralReal\RevisaoGeralReal\bin\Debug\net6.0\RevisaoGeralReal.runtimeconfig.json
+C:\Users\2022102020041\source\repos\RevisaoGeralReal\RevisaoGeralReal\bin\Debug\net6.0\RevisaoGeralReal.dll
+C:\Users\2022102020041\source\repos\RevisaoGeralReal\RevisaoGeralReal\bin\Debug\net6.0\RevisaoGeralReal.pdb
+C:\Users\2022102020041\source\repos\RevisaoGeralReal\RevisaoGeralReal\obj\Debug\net6.0\RevisaoGeralReal.csproj.AssemblyReference.cache
+C:\Users\2022102020041\source\repos\RevisaoGeralReal\RevisaoGeralReal\obj\Debug\net6.0\RevisaoGeralReal.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\2022102020041\source\repos\RevisaoGeralReal\RevisaoGeralReal\obj\Debug\net6.0\RevisaoGeralReal.AssemblyInfoInputs.cache
+C:\Users\2022102020041\source\repos\RevisaoGeralReal\RevisaoGeralReal\obj\Debug\net6.0\RevisaoGeralReal.AssemblyInfo.cs
+C:\Users\2022102020041\source\repos\RevisaoGeralReal\RevisaoGeralReal\obj\Debug\net6.0\RevisaoGeralReal.csproj.CoreCompileInputs.cache
+C:\Users\2022102020041\source\repos\RevisaoGeralReal\RevisaoGeralReal\obj\Debug\net6.0\RevisaoGeralReal.dll
+C:\Users\2022102020041\source\repos\RevisaoGeralReal\RevisaoGeralReal\obj\Debug\net6.0\refint\RevisaoGeralReal.dll
+C:\Users\2022102020041\source\repos\RevisaoGeralReal\RevisaoGeralReal\obj\Debug\net6.0\RevisaoGeralReal.pdb
+C:\Users\2022102020041\source\repos\RevisaoGeralReal\RevisaoGeralReal\obj\Debug\net6.0\RevisaoGeralReal.genruntimeconfig.cache
+C:\Users\2022102020041\source\repos\RevisaoGeralReal\RevisaoGeralReal\obj\Debug\net6.0\ref\RevisaoGeralReal.dll
