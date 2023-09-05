@@ -1,12 +1,14 @@
 ﻿using RevisaoGeralReal;
 using System;
+using System.Reflection.Metadata;
 using System.Security.Cryptography.X509Certificates;
+using System.Threading.Channels;
 
 public class ProgramList
 {
     static void Main(string[] args)
     {
-        ExemploLista1();
+        //ExemploLista1();
         ExemploListaObjeto();
 
     }
@@ -49,20 +51,56 @@ public class ProgramList
     {
         List<Paciente> listapaci = new List<Paciente>();
         Paciente p1 = new Paciente(1, "Elias", "000", "Elias.Elias", new DateTime(1982, 07, 22));
-        Paciente p2 = new Paciente(1, "Pedro", "001", "pedro.", new DateTime(2006, 12, 22));
-        Paciente p3 = new Paciente(1, "Enzo", "002", "enzo.", new DateTime(2003, 04, 12));
+        Paciente p2 = new Paciente(2, "Pedro", "002", "pedro.", new DateTime(2006, 12, 22));
+        Paciente p3 = new Paciente(3, "Enzo", "001", "enzo.", new DateTime(2003, 04, 12));
         Paciente p4 = new Paciente(1, "Giovanna", "004", "gio.", new DateTime(2006, 02, 23));
-        Paciente p5 = new Paciente(1, "Rogerio", "005", "roges.", new DateTime(2005, 01, 11));
+        Paciente p5 = new Paciente(1, "ROGERIO", "005", "roges.", new DateTime(2005, 01, 11));
 
         listapaci.Add(p1);
         listapaci.Add(p2);
         listapaci.Add(p3);
         listapaci.Add(p4);
         listapaci.Add(p5);
+        listapaci.Remove(p1);
 
-        foreach (var p in listapaci)
+        List<Paciente> paciOrdenados = listapaci.OrderBy(x=> x.cpf).ToList();//o metodo orgena a lista a partr de um determinado atributo, que deve ser amarzenada em outra lista
+        //e utilizar o ToList
+
+
+        //recupera determinado elemento que contem o valor passado na expressao
+        Paciente cpf000 = listapaci.SingleOrDefault(x => x.cpf == "000");
+        if(cpf000 != null)
+        {
+            Console.WriteLine(cpf000);
+        }
+        else
+        {
+            Console.WriteLine("Paciente não encontrado!");
+        }
+
+        /*foreach(Paciente p in paciOrdenados)
+        {
+            if(p.cpf == "000")
+            {
+                Paciente paci = p;
+            }
+        }*/
+
+        //Console.WriteLine();
+
+        foreach (var p in paciOrdenados)
         {
             Console.WriteLine(p.nome+ "\n" + p.cpf + "\n\n");
+        }
+
+        string nome = "Rogerio";
+
+        //o metodo where é utilizado para selecionar todos que aender algumas expressao 
+        List<Paciente> busca = listapaci.Where(x => x.nome == nome.ToUpper()).ToList();
+        
+        foreach (Paciente p in busca)
+        {
+            Console.WriteLine(p.nome);
         }
     }
 }
